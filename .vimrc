@@ -24,6 +24,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
+filetype plugin indent on               " required
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -31,13 +33,6 @@ call vundle#end()
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-
-" --------------------------------------------------------------------------------
-" Pathogen
-" --------------------------------------------------------------------------------
-execute pathogen#infect()
-syntax enable                       " Syntax highlighting
-filetype plugin indent on
 
 " --------------------------------------------------------------------------------
 " syntastic
@@ -77,7 +72,8 @@ set backspace=indent,eol,start          " make backspaces more powerfull
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-set number "show nubmers
+set number                              " show numbers
+syntax enable                           " syntax highlighting
 
 " to delete whitespaces
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
