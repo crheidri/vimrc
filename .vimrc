@@ -157,5 +157,4 @@ nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> 
 " --------------------------------------------------------------------------------
 " set the colorscheme
 " --------------------------------------------------------------------------------
-set background=dark             " tell vim what color our terminal is
 colorscheme badwolf
