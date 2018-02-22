@@ -13,7 +13,6 @@ Plugin 'jooize/vim-colemak'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'         " git status in gutter
 Plugin 'Yggdroot/indentLine'            " line indents
-Plugin 'vim-syntastic/syntastic'        " linting
 Plugin 'vim-scripts/tComment'           " commenting
 Plugin 'itchyny/lightline.vim'          " colored status bar
 Plugin 'jiangmiao/auto-pairs'           " auto-close braces
@@ -33,29 +32,6 @@ filetype plugin indent on               " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-
-" --------------------------------------------------------------------------------
-" syntastic
-" --------------------------------------------------------------------------------
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1      " auto load errors into loc list
-let g:syntastic_auto_loc_list=0                 " auto show list
-let g:syntastic_check_on_open=0
-let g:syntastic_check_on_wq=1
-
-let g:syntastic_enable_highlighting=0           " turn off highlight
-let g:syntastic_warning_symbol='`'
-
-let g:syntastic_python_flake8_args='-j4'        " pylint input args
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
-
-"turn on/run
-nnoremap <C-k> :w<CR> :SyntasticCheck<CR> :GitGutterDisable<CR>
-"turn off
-nnoremap <C-e> :GitGutterEnable<CR> :SyntasticReset<CR>
 
 " --------------------------------------------------------------------------------
 " general settings
