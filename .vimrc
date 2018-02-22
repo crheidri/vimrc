@@ -87,7 +87,7 @@ let g:badwolf_darkgutter=1
 " gitgutter
 " --------------------------------------------------------------------------------
 nnoremap <C-w>G :GitGutterToggle<CR>
-set updatetime=250
+set updatetime=500
 set signcolumn=yes
 " --------------------------------------------------------------------------------
 " tcomment
