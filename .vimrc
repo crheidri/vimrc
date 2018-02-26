@@ -44,7 +44,7 @@ au BufRead,BufNewFile Makefile* set noexpandtab
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set backspace=indent,eol,start          " make backspaces more powerfull
 
-" tabbing 
+" tabbing
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
@@ -52,10 +52,7 @@ set number                              " show numbers
 syntax enable                           " syntax highlighting
 
 " to delete whitespaces
-nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-
-" ctrl-enter like newline
-imap <C-o> <esc>o
+nnoremap <C-k>x :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
@@ -89,6 +86,7 @@ let g:badwolf_darkgutter=1
 nnoremap <C-w>G :GitGutterToggle<CR>
 set updatetime=500
 set signcolumn=yes
+
 " --------------------------------------------------------------------------------
 " tcomment
 " --------------------------------------------------------------------------------
@@ -101,7 +99,7 @@ let g:indentLine_char='|'
 let g:indentLine_color_term=237
 
 " --------------------------------------------------------------------------------
-" lightline 
+" lightline
 " --------------------------------------------------------------------------------
 set laststatus=2
 set noshowmode          " hide the lower mode bar
