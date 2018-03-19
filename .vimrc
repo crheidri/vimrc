@@ -54,8 +54,14 @@ syntax enable                           " syntax highlighting
 " to delete whitespaces
 nnoremap <C-k>x :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
-" <Ctrl-l> redraws the screen and removes any search highlighting.
+" <Ctrl-l> redraws the screen and removes any search highlighting
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-n> <C-w>n
+nnoremap <C-e> <C-w>e
+nnoremap <C-i> <C-w>i
 
 " --------------------------------------------------------------------------------
 " 256 bit colors
