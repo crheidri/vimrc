@@ -19,8 +19,6 @@ Plugin 'jiangmiao/auto-pairs'           " auto-close braces
 
 " colors
 Plugin 'sjl/badwolf'
-Plugin 'morhetz/gruvbox'
-Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
 filetype plugin indent on               " required
@@ -64,16 +62,6 @@ set t_Co=256                    " 256 bit colors
 if &term =~ '256color'          " Disable background color erase
     set t_ut=
 endif
-
-" --------------------------------------------------------------------------------
-" gruvbox
-" --------------------------------------------------------------------------------
-let g:gruvbox_contrast_dark='hard'
-
-" --------------------------------------------------------------------------------
-" vim-hybrid
-" --------------------------------------------------------------------------------
-let g:hybrid_custom_colors=1
 
 " --------------------------------------------------------------------------------
 " badwolf
