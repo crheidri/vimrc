@@ -16,6 +16,8 @@ Plugin 'vim-scripts/tComment'           " commenting
 Plugin 'itchyny/lightline.vim'          " colored status bar
 Plugin 'jiangmiao/auto-pairs'           " auto-close braces
 
+Plugin 'jooize/vim-colemak'             " colemak layout
+
 " colors
 Plugin 'sjl/badwolf'
 
